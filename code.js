@@ -1,4 +1,21 @@
 
+function ElementCompare2d(Twodarr,element2){
+    var equal=false;
+    for(x=0;x<Twodarr.length;x++){
+        var count=0;
+        for(y=0;y<element2.length;y++){
+            if(Twodarr[x][y]==element2[y]){
+                count++;
+            }
+            if(count>=element2.length){
+                equal=true;
+            }
+
+        }
+    }
+    return equal
+}
+
 function IsElement(array,element){
     var ElementExists=false;
     for(var x=0;x<array.length;x++){
@@ -18,7 +35,6 @@ function Max(array){
     }
     return max;
 }
-
 function Sorted(array){
     sorted=false;
     for(var x=0;x<array.length-1;){
@@ -42,15 +58,15 @@ function Factorial(n){
 }
 function perm(array){
     var permlist=[];
-    for(x=0;x<Factorial(array.length);x++){
+    while(permlist.length!=Factorial(array.length)){
         var perm=[];
         while(perm.length!=array.length){
-            var generate=Math.floor((Math.random()*Max(array)+1))
+            var generate=Math.floor((Math.random()*Math.max(...array)+1))
             if(IsElement(array,generate)&& IsElement(perm,generate)==false){
                 perm.push(generate)
             }
         }
-        if(IsElement(permlist,perm)==false){
+        if(ElementCompare2d(permlist,perm)==false){
             permlist.push(perm)
         }
     }   
@@ -60,10 +76,12 @@ function perm(array){
 function permutationSort(array){
     var permlist=perm(array);
     var returnarr;
+    var count=0;
     for(x=0;x<permlist.length;x++){
         if(Sorted(permlist[x])){
             returnarr=permlist[x]
         }
+        count++;
     }
-    return returnarr
+    return count
 }
