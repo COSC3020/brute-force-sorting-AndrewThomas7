@@ -50,10 +50,8 @@ function permutationSort(array){
     var count=0;
     var weiner=-1;
     if(array.length){
-        return count+1
+        return count
     }
-
-    
     function Permutation_(array, FixIndex, count, iter) {
         count+=1;
         if(Sorted(array)){
