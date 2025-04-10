@@ -76,5 +76,5 @@ function permutationSort(array){
             break
         }
     }
-    return count
+    return count+1
 }
