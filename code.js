@@ -52,6 +52,8 @@ function permutationSort(array){
     if(array.length){
         return count+1
     }
+
+    
     function Permutation_(array, FixIndex, count, iter) {
         count+=1;
         if(Sorted(array)){
