@@ -45,36 +45,24 @@ function Sorted(array){
     return sorted
 }
 
-function Permutation(array) {
+function permutationSort(array){
     var perm;
-    var permlist = []
+    var count=0;
+    var weiner=-1;
     function Permutation_(array, FixIndex, count, iter) {
-        if (FixIndex >= array.length - 1) {
-            return permlist
+        count+=1;
+        if(Sorted(array)){
+            weiner=count;
+            return weiner
         }
         for (var i = iter; i < array.length; i++) {
             Swap(array, FixIndex, i)
-            if(ElementCompare2d(permlist,array.slice())==false){
-                permlist.push(array.slice())
-            }
             Permutation_(array, FixIndex + 1, count, iter + 1)
+            if(weiner!=-1){
+                return weiner;
+            }
             Swap(array, FixIndex, i)
         }
-        return permlist
     }
     return Permutation_(array,0,0,0)
-}
-
-function permutationSort(array){
-    var permlist=Permutation(array);
-    var returnarr;
-    var count=0;
-    for(x=0;x<permlist.length;x++){
-        count++;
-        if(Sorted(permlist[x])){
-            returnarr=permlist[x]
-            break
-        }
-    }
-    return count
 }
