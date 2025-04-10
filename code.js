@@ -72,6 +72,7 @@ function permutationSort(array){
     for(x=0;x<permlist.length;x++){
         if(Sorted(permlist[x])){
             returnarr=permlist[x]
+            break
         }
         count++;
     }
