@@ -46,7 +46,6 @@ function Sorted(array){
 }
 
 
-
 function permutationSort(array){
     var perm;
     var count=0;
@@ -54,9 +53,6 @@ function permutationSort(array){
     var returnarr;
     if(array.length<1){
         return count;
-    }
-    if(array.length==1){
-        return 1;
     }
     function Permutation_(array, FixIndex, count, iter) {
         count+=1;
