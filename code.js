@@ -32,6 +32,9 @@ function Factorial(n) {
 
 function Sorted(array){
     sorted=false;
+    if(array.length==1){
+        return true
+    }
     for(var x=0;x<array.length-1;){
         if(array[x]<array[x+1]){
             x++;
