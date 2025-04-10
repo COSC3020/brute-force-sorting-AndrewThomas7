@@ -70,11 +70,11 @@ function permutationSort(array){
     var returnarr;
     var count=0;
     for(x=0;x<permlist.length;x++){
+        count++;
         if(Sorted(permlist[x])){
             returnarr=permlist[x]
             break
         }
-        count++;
     }
     return count
 }
