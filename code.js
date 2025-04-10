@@ -5,38 +5,13 @@ function Swap(array, first, second) {
     return array;
 }
 
-
-function ElementCompare2d(Twodarr, element2) {
-    var equal = false;
-    for (x = 0; x < Twodarr.length; x++) {
-        var count = 0;
-        for (y = 0; y < element2.length; y++) {
-            if (Twodarr[x][y] == element2[y]) {
-                count++;
-            }
-            if (count >= element2.length) {
-                equal = true;
-            }
-
-        }
-    }
-    return equal
-}
-
-function Factorial(n) {
-    if (n == 0) {
-        return 1;
-    }
-    return Factorial(n - 1) * n
-}
-
 function Sorted(array){
     sorted=false;
     if(array.length==1){
         return true
     }
     for(var x=0;x<array.length-1;){
-        if(array[x]<array[x+1]){
+        if(array[x]<=array[x+1]){
             x++;
             sorted=true;
         }
