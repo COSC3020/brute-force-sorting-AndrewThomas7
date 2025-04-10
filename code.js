@@ -49,8 +49,9 @@ function permutationSort(array){
     var perm;
     var count=0;
     var weiner=-1;
-    if(array.length){
-        return count
+    var returnarr;
+    if(array.length<1){
+        return count;
     }
     function Permutation_(array, FixIndex, count, iter) {
         count+=1;
@@ -61,7 +62,6 @@ function permutationSort(array){
         for (var i = iter; i < array.length; i++) {
             Swap(array, FixIndex, i)
             Permutation_(array, FixIndex + 1, count, iter + 1)
-            returnarr=array.splice(0,array.length,...returnarr)
             if(weiner!=-1){
                 return weiner;
             }
