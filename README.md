@@ -11,6 +11,28 @@ The return value should be the number of permutations that were tried until the
 sorted list was "discovered". The unsorted list passed as an argument should be
 sorted, i.e. do not copy the list and sort the copy.
 
+“I certify that I have listed all sources used to complete this exercise, including the use
+of any Large Language Models. All of the work is my own, except where stated
+otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is
+suspected, charges may be filed against me without prior notice.”- Andrew Thomas
+
+## Sources
+
+#1-https://www.baeldung.com/cs/array-generate-all-permutations
+
+#2-https://ruslanledesma.com/2016/06/17/why-does-heap-work.html
+
+#3-https://www.prepbytes.com/blog/heap/heap-algorithm-for-generating-permutations/
+
+#4--https://www.prepbytes.com/blog/heap/heap-algorithm-for-generating-permutations/
+
+#5--https://github.com/COSC3020/brute-force-sorting-DJReflexive- Looked at this repository for help with the time complexity and also used their code to check against mine in terms of output, because I couldn't get the unit tests to pass and wanted to see what the output should be.
+
+#6-https://keploy.io/blog/community/javascript-random-number
+
+#7- Got helped from some friends with getting the count to return proberly upon the recurssive stack closing.
+
+
 ## Runtime Analysis
 
 What is the runtime complexity of the algorithm that you implemented? What does
