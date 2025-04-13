@@ -22,8 +22,6 @@ function Sorted(array){
     }
     return sorted
 }
-
-
 function permutationSort(array){
     var perm;
     var count=0;
@@ -48,4 +46,4 @@ function permutationSort(array){
         }
     }
     return Permutation_(array,0,0,0)
-}
+
