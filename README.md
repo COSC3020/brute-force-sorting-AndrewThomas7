@@ -43,6 +43,26 @@ randomly without memory instead of systematically trying them?
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
+## Answer
+
+Here we start off with some constant time operations just declaring varaibles and doing an if statement, we then have a function closure which creates permutations and checks them to be sorted or not. Here The Sorted function which I made runs first, checking to see if the list is sorted or not.  The Sorted function loops through the entire length of the array giving us $O(n)$  for that operation. 
+
+We then have the for-loop which genrates the permutations recursively by performing swaps. This process generates all the permutations for a list of length $n$ and it is a well known mathematical fact that such a list has $n!$ permutations. Thus this process along with the if-statement we have to check for which item was sorted and return the count for gives us $n!+1$. Additonally considering the outer if statement we have $n!+2$.
+
+All together this gives us a time complexity of $$n+n!+2=n!=\theta(n!)$$
+
+### Best Case
+
+The best case for this algorithm is that the list is already sorted. When this happens we just run the Sorted functuon which has a complexity of $O(n)$, meaning the best case is also $\theta(n)$.
+
+### Worst Case
+
+The worst case is something like when the list is in reverse and also has a time complexity of $\theta(n!)$ because it would have to check all permutations
+
+How would this complexity change if you generated permutations randomly without memory instead of systematically trying them?
+
+- The time complexity would become large so fast that it's possible the program would never stop running. The amount of operations you have to perform to get the correct random numbers is huge. I actually even tried this on one of my first implementations and it ran over 5 mintues without givng any output.
+
 
 ```Javascript
 function Swap(array, first, second) {
