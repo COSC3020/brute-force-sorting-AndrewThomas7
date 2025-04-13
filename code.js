@@ -4,7 +4,6 @@ function Swap(array, first, second) {
     array[second] = temp;
     return array;
 }
-
 function Sorted(array){
     sorted=false;
     if(array.length==1){
@@ -22,8 +21,6 @@ function Sorted(array){
     }
     return sorted
 }
-
-
 function permutationSort(array){
     var perm;
     var count=0;
