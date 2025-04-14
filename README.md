@@ -18,17 +18,17 @@ suspected, charges may be filed against me without prior notice.”- Andrew Thom
 
 ## Sources
 
-#1-https://www.baeldung.com/cs/array-generate-all-permutations
+#1-https://www.baeldung.com/cs/array-generate-all-permutations- Here I learned that you could represent the permutations as a binary tree, inspiring me to implement my code in that way. I did not take any code from this website, I used it purely to resarch and better understand the topic. I also initally wanted to use heaps algorithm and learned about that here too.
 
-#2-https://ruslanledesma.com/2016/06/17/why-does-heap-work.html
+#2-https://ruslanledesma.com/2016/06/17/why-does-heap-work.html- I had planned on using heaps algorithm to generate my Permutations but decided not to, I left this in from when I was working on that angle. But later decided to change to a tree implementation.
 
-#3-https://www.prepbytes.com/blog/heap/heap-algorithm-for-generating-permutations/
+#3-https://www.prepbytes.com/blog/heap/heap-algorithm-for-generating-permutations/- Here I took insperation from the code snippet listed on heaps alogorithm but did not copy any code explicitly.
 
-#4--https://www.prepbytes.com/blog/heap/heap-algorithm-for-generating-permutations/
+#4--https://www.prepbytes.com/blog/heap/heap-algorithm-for-generating-permutations/- This is a copy of the source above, I put this here by mistake.
 
 #5--https://github.com/COSC3020/brute-force-sorting-DJReflexive- Looked at this repository for help with the time complexity and also used their code to check against mine in terms of output, because I couldn't get the unit tests to pass and wanted to see what the output should be.
 
-#6-https://keploy.io/blog/community/javascript-random-number
+#6-https://keploy.io/blog/community/javascript-random-number- Learned about generating random numbers here, one of my previous implementaions used random numbers to generate permutations, but I ultimatley swictched to the tree implemenation.
 
 #7- Got helped from some friends with getting the count to return proberly upon the recurssive stack closing.
 
