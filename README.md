@@ -30,7 +30,7 @@ suspected, charges may be filed against me without prior notice.”- Andrew Thom
 
 #6-https://keploy.io/blog/community/javascript-random-number- Learned about generating random numbers here, one of my previous implementaions used random numbers to generate permutations, but I ultimatley swictched to the tree implemenation.
 
-#7- Got helped from some friends with getting the count to return proberly upon the recurssive stack closing.
+#7- Got helped from some friends with getting the count to return proberly upon the recurssive stack closing. My friends psudo coded how I could fix my incorrect count return and I used that to implement what I have in my final product.
 
 
 ## Runtime Analysis
